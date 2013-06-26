@@ -3,7 +3,7 @@ La section suivante décrit les conditions obligatoires qui doivent être respec
 Obligatoire
 -----------
 
-* Les classes et les espaces de noms entièrement qualifiés doivent disposer de la structure suivante
+* Les classes et les espaces de noms entièrement qualifiés doivent respecter de la structure suivante
   `\<Nom du Vendor>\(<Espace de noms>\)*<Nom de la Classe>`.
 * Chaque espace de noms doit avoir un espace de noms racine. ("Nom du Vendor").
 * Chaque espace de noms peut avoir autant de sous-espaces de noms qu'il le souhaite.
@@ -20,13 +20,13 @@ Exemples
 * `\Zend\Acl` => `/chemin/vers/projet/lib/vendor/Zend/Acl.php`
 * `\Zend\Mail\Message` => `/chemin/vers/projet/lib/vendor/Zend/Mail/Message.php`
 
-Sous-tiret dans les Espaces de Noms et Noms de Classes
-------------------------------------------------------
+Tiret-bas dans les Espaces de Noms et les Noms de Classes
+---------------------------------------------------------
 
 * `\espace de noms\package\Class_Name` => `/chemin/vers/projet/lib/vendor/espace de noms/package/Class/Name.php`
 * `\espace de noms\package_name\Class_Name` => `/chemin/vers/projet/lib/vendor/espace de noms/package_name/Class/Name.php`
 
-Les standards établis ici doivent avoir le plus petit dénominateur commun pour assurer une bonne interopérabilité des chargeurs de classes. Vous pouvez vérifier que vous respectez ces standards via l'utilisation de l'implémentation d'exemple de SplClassLoader qui est capable de charger les classes PHP 5.3.
+Les standards établis ici doivent avoir le plus petit dénominateur commun pour assurer une bonne interopérabilité entre les chargeurs de classes. Vous pouvez vérifier que vous respectez ces standards via l'utilisation de l'implémentation d'exemple de SplClassLoader qui est capable de charger les classes PHP 5.3.
 
 Exemple d'Implémentation
 ------------------------
